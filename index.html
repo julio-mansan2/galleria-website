@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Galleria Website - Frontend Mentor</title>
+    <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <a href="/">
+            <img src="./src/images/shared/logo.svg" alt="Galleria Logo">
+        </a>
+        <button class="btn-slideshow">Start Slideshow</button>
+    </header>
+    <hr>
+    <main class="main">
+        <section class="main-page selecionado">
+            <button class="starry-night btn">
+                <img src="./src/images/starry-night/thumbnail.jpg" alt="Starry Night">
+                <div>
+                    <h2>Starry Night</h2>
+                    <p>Vincent Van Gogh</p>
+                </div>
+            </button>
+            
+            <button class="girl-pearl btn">
+                <img src="./src/images/girl-with-pearl-earring/thumbnail.jpg" alt="Girl With Pearl Earring">
+                <div>
+                    <h2>Girl With Pearl Earring</h2>
+                    <p>Johannes Vermeer</p>
+                </div>
+            </button>
+            
+            <button class="guernica btn">
+                <img src="./src/images/guernica/thumbnail.jpg" alt="Guernica">
+                <div>
+                    <h2>Guernica</h2>
+                    <p>Pablo Picasso</p>
+                </div>
+            </button>
+
+            <button class="penitent btn">
+                <img src="./src/images/penitent-magdalene/thumbnail.jpg" alt="Penitent Magdalene">
+                <div>
+                    <h2>Penitent Magdalene</h2>
+                    <p>Artemisia Gentileschi</p>
+                </div>
+            </button>
+            
+            <button class="storm-sea btn">
+                <img src="./src/images/the-storm-on-the-sea-of-galilee/thumbnail.jpg" alt="The Storm on the Sea of Galilee">
+                <div>
+                    <h2>The Storm on the Sea of Galilee</h2>
+                    <p>Rembrandt</p>
+                </div>
+            </button>
+            
+            <button class="wave-kanagawa btn">
+                <img src="./src/images/the-great-wave-off-kanagawa/thumbnail.jpg" alt="The Great Wave off Kanagawa">
+                <div>
+                    <h2>The Great Wave off Kanagawa</h2>
+                    <p>Hokusai</p>
+                </div>
+            </button>
+            
+            <button class="self-portrait btn">
+                <img src="./src/images/van-gogh-self-portrait/thumbnail.jpg" alt="Van Gogh Self-portrait">
+                <div>
+                    <h2>Van Gogh Self-portrait</h2>
+                    <p>Vincent Van Gogh</p>
+                </div>
+            </button>
+            
+            <button class="sleeping btn">
+                <img src="./src/images/the-sleeping-gypsy/thumbnail.jpg" alt="The Sleeping Gypsy">
+                <div>
+                    <h2>The Sleeping Gypsy</h2>
+                    <p>Henry Rousseau</p>
+                </div>
+            </button>
+            
+            <button class="lady-ermine btn">
+                <img src="./src/images/lady-with-an-ermine/thumbnail.jpg" alt="Lady with an Ermine">
+                <div>
+                    <h2>Lady with an Ermine</h2>
+                    <p>Leonardo da Vinci</p>
+                </div>
+            </button>
+            
+            <button class="cafe-night btn">
+                <img src="./src/images/the-night-cafe/thumbnail.jpg" alt="The Night Café">
+                <div>
+                    <h2>The Night Café</h2>
+                    <p>Vincent Van Gogh</p>
+                </div>
+            </button>
+            
+            <button class="basket-apple btn">
+                <img src="./src/images/the-basket-of-apples/thumbnail.jpg" alt="The Basket of Apples">
+                <div>
+                    <h2>The Basket of Apples</h2>
+                    <p>Paul Cézanne</p>
+                </div>
+            </button>
+            
+            <button class="red-vest btn">
+                <img src="./src/images/the-boy-in-the-red-vest/thumbnail.jpg" alt="The Boy in the Red Vest">
+                <div>
+                    <h2>The Boy in the Red Vest</h2>
+                    <p>Paul Cézanne</p>
+                </div>
+            </button>
+            
+            <button class="arnolfini btn">
+                <img src="./src/images/starry-night/thumbnail.jpg" alt="Arnolfini Portrait">
+                <div>
+                    <h2>Arnolfini Portrait</h2>
+                    <p>Jan van Eyck</p>
+                </div>
+            </button>
+            
+            <button class="mona-lisa btn">
+                <img src="./src/images/mona-lisa/thumbnail.jpg" alt="Mona Lisa">
+                <div>
+                    <h2>Mona Lisa</h2>
+                    <p>Leonardo da Vinci</p>
+                </div>
+            </button>
+            
+            <button class="swing btn">
+                <img src="./src/images/the-swing/thumbnail.jpg" alt="The Swing">
+                <div>
+                    <h2>The Swing</h2>
+                    <p>Jean-Honoré Fragonard</p>
+                </div>
+            </button>
+        </section>
+        <section class="slideshows">
+            <section class="main-slide">
+                <section class="main-info">
+                    <article class="paint">
+                        <div class="image-paint">
+    
+                        </div>
+                        <button class="view-image">
+                            <img src="./src/images/shared/icon-view-image.svg" aria-hidden="true">
+                            <p>View image</p>
+                        </button>
+                    </article>
+                    <div class="info">
+                        <article>
+                            <h1 class="name-paint"></h1>
+                            <p class="author-name"></p>
+                        </article>
+                        <article class="author-img">
+    
+                        </article>
+                    </div>
+                </section>
+                <section class="description">
+                    <p class="paint-description"></p>
+                    <a href="/" class="go-to-source"></a>
+                </section>
+            </section>
+            <section class="footer">
+                <div>
+                    <h2 class="footer-paint"></h2>
+                    <p class="footer-author"></p>
+                </div>
+                <div class="buttons">
+                    <button class="back"><img src="./src/images/shared/icon-back-button.svg" aria-hidden="true"></button>
+                    <button class="next"><img src="./src/images/shared/icon-next-button.svg" aria-hidden="true"></button>
+                </div>
+            </section>
+        </section>
+    </main>
+    <section class="show-image">
+        <div>
+            <button class="close">Close</button>
+            <div class="img-expanded">
+
+            </div>
+        </div>
+    </section>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

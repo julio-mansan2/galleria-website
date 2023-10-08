@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    font-family: 'Libre Baskerville', sans-serif;
+    position: relative;
+}
+
+.header {
+    grid-area: header;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header button,
+.close {
+    color: var(--boulder);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', sans-serif;
+    letter-spacing: 2.5px;
+    transition: 0.3s;
+}
+
+.header button:hover,
+.close {
+    cursor: pointer;
+    color: var(--black);
+}
+
+hr {
+    width: 100%;
+    height: 0px;
+    border: 1px solid var(--mercury);
+}
+
+.main {
+    grid-area: main;
+}
+
+.main-page,
+.slideshows,
+.show-image {
+    position: absolute;
+    top: -1000vh;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+
+.selecionado {
+    opacity: 1;
+    z-index: 1;
+    position: relative;
+    top: 0;
+}
+
+.main-page {
+    padding: 1.875rem;
+    display: column;
+    column-count: 4;
+    gap: 1.25rem;
+}
+
+.main-page .btn {
+    font-family: 'Libre Baskerville', sans-serif;
+    position: relative;
+    margin-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
+    transition: 0.3s;
+}
+
+.main-page .btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.main-page .btn div {
+    position: absolute;
+    bottom: 1.875rem;
+    right: 1.875rem;
+    left: 1.875rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.main-page .btn::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--black);
+    opacity: 0.3;
+    left: 0;
+    top: 0;
+}
+
+.main-page .btn h2 {
+    font-size: 1.3rem;
+    color: var(--white);
+}
+
+.main-page .btn p {
+    color: var(--white);
+}
+
+.main-page img {
+    width: 100%;
+}
+
+.slideshows {
+    padding: 2.5rem;
+}
+
+.main-slide {
+    display: flex;
+    gap: 9.375rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6.25rem;
+}
+
+.description {
+    width: 50%;
+    color: var(--boulder);
+    font-weight: 700;
+}
+
+.paint-description {
+    font-size: 0.9rem;
+    line-height: 1.875rem;
+    margin-bottom: 1.25rem;
+}
+
+.description a {
+    text-decoration: underline;
+    color: var(--boulder);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.description a:hover {
+    color: var(--black);
+}
+
+.main-info {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.paint {
+    position: relative;
+}
+
+.image-paint img {
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info article:first-child {
+    position: relative;
+    padding: 1.875rem;
+    left: -6.25rem;
+    background: var(--white);
+}
+
+.info article:first-child h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.view-image {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    display: flex;
+    gap: 1.25rem;
+    padding: 0.625rem;
+    background: var(--black);
+    align-items: center;
+}
+
+.view-image p {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white);
+    transition: 0.3s;
+}
+
+.view-image:hover {
+    background: var(--boulder);
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.footer .buttons {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.footer .buttons button {
+    cursor: pointer;
+}
+
+.show-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+}
+
+.img-expanded {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close {
+    margin-bottom: 1.25rem;
+}
